@@ -137,8 +137,11 @@ TARGET_RECOVERY_QCOM_RTC_FIX := true
 
 #MultiROM config. MultiROM also uses parts of TWRP config
 MR_INPUT_TYPE := type_b
-
-
+MR_INIT_DEVICES := device/huawei/angler/mr_init_devices.c
+MR_DPI := xhdpi
+MR_DPI_FONT := 216
+MR_FSTAB := device/huawei/angler/recovery.fstab
+MR_KEXEC_MEM_MIN := 0x0e900000
 
 # Include an expanded selection of fonts
 EXTENDED_FONT_FOOTPRINT := true
